@@ -1,0 +1,23 @@
+.quick-actions {
+  display: flex;
+  gap: var(--default-spacing);
+}
+
+.action-button {
+  background-color: var(--common-white);
+  padding: calc(var(--default-spacing) / 2) var(--default-spacing);
+  border-radius: calc(var(--default-spacing) / 4);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+
+  &.workout-button {
+    background-color: green;
+    color: var(--common-white);
+  }
+
+  &.progress-button {
+    background-color: var(--common-black);
+    color: var(--common-white);
+  }
+}
